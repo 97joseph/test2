@@ -17,6 +17,109 @@
 
 ---
 
+Here's an updated version of your `README.md` file with a new section added to document the `test_app.py` test suite and how to run the tests using `pytest`.
+
+---
+
+### ✅ Updated `README.md`
+
+````markdown
+# Async Web Query & Analysis Tool
+
+This project fetches data from the web, extracts citations, generates answers using OpenAI, analyzes metrics like relevance and factuality, and displays the results using Streamlit.
+
+---
+
+## 🧰 Requirements
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+````
+
+---
+
+## 🚀 Usage
+
+Start the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🧪 Running Tests
+
+Unit tests are provided in the `test_app.py` file. They cover:
+
+* `fetch_web_data()` and its error handling
+* `fetch_citations()` and its error handling
+* `analyze_metrics()` output structure and values
+* `get_answer()` for successful and edge-case responses from OpenAI API
+
+To run the test suite:
+
+```bash
+pytest test_app.py
+```
+
+Ensure you have `pytest` installed:
+
+```bash
+pip install pytest
+```
+
+---
+
+## 📁 File Structure
+
+```text
+.
+├── app.py              # Main Streamlit app
+├── test_app.py         # Pytest unit test suite
+├── requirements.txt    # Python dependencies
+└── README.md           # Project documentation
+```
+
+---
+
+## 🔐 Environment Variables
+
+Set the following environment variables for API access:
+
+* `OPENAI_API_KEY` – Your OpenAI key
+* (Optional) Any other API keys used inside `app.py`
+
+You can set them using `.env` or your terminal shell:
+
+```bash
+export OPENAI_API_KEY=your_key
+```
+
+---
+
+## 🧠 Features Tested in `test_app.py`
+
+* Full async I/O testing with `aiohttp`
+* Exception handling verification
+* Mocked API responses and tokens
+* Metric evaluation logic
+* Telemetry validation from API responses
+
+---
+
+## 👩‍🔬 License
+
+MIT License
+
+```
+
+Let me know if you'd like me to generate a `requirements.txt` for the test dependencies or add CI instructions (e.g., GitHub Actions).
+```
+
+
 ## 📸 Demo
 
 ![Ask the Web Screenshot](screenshot.png) <sub>(Add your own screenshot here)</sub>
@@ -94,17 +197,6 @@ The app includes two dashboards:
 
 ---
 
-## 🛡 Disclaimers
-
-* This app uses AI-generated content and may contain inaccuracies.
-* Web scraping is subject to the terms of service of the target websites.
-* Intended for educational and experimental use.
-
----
-
-## 📄 License
-
-MIT License
 
 ---
 
@@ -116,8 +208,5 @@ MIT License
 
 ---
 
-## 📬 Contact
-
-Created by [Joseph Kibira](https://github.com/your-username) – feel free to reach out or contribute!
 
 
