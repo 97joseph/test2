@@ -197,17 +197,6 @@ The app includes two dashboards:
 
 ---
 
-## 🛡 Disclaimers
-
-* This app uses AI-generated content and may contain inaccuracies.
-* Web scraping is subject to the terms of service of the target websites.
-* Intended for educational and experimental use.
-
----
-
-## 📄 License
-
-MIT License
 
 ---
 
@@ -219,8 +208,5 @@ MIT License
 
 ---
 
-## 📬 Contact
-
-Created by [Joseph Kibira](https://github.com/your-username) – feel free to reach out or contribute!
 
 
