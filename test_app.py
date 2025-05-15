@@ -3,7 +3,7 @@ import pytest
 import asyncio
 from unittest.mock import AsyncMock, patch, MagicMock
 from bs4 import BeautifulSoup
-from app import fetch_web_data, fetch_citations, analyze_metrics, get_answer
+from metrics import fetch_web_data, fetch_citations, analyze_metrics, get_answer
 
 # Mock environment variables
 @pytest.fixture(autouse=True)
