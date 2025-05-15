@@ -1,5 +1,5 @@
 import streamlit as st
-from openai import OpenAI
+import openai
 import aiohttp
 import asyncio
 from bs4 import BeautifulSoup
@@ -14,7 +14,8 @@ from typing import List, Tuple, Dict
 load_dotenv()
 
 # Configure OpenAI API
-client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 MODEL = "gpt-4o-mini"  # Use a more efficient model
 
 
